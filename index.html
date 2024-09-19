@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="accessibility, Google Translate, CSS, reading, direction, English, Arabic, margin, padding, inline, block">
+  <title>Text Direction Demo</title>
+  <link rel="stylesheet" href="change-direction.css">
+  <link href="icons.svg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightgray;
+      padding: 3rem;
+      transition: direction 0.3s ease;
+    }
+
+    img {
+      background-color: cornflowerblue;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-block-end: 2rem;
+      border-block-end: 0.125rem dashed black;
+      margin-block-end: 2rem;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-block-end: 2rem;
+    }
+
+    .text-box {
+      padding: 0.625rem;
+      margin-block-end: 1rem;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 0.625rem 1.25rem;
+      font-size: 1.5rem;
+      background-color: lightblue;
+      border-radius: 0.25rem;
+      font-weight: bold;
+    }
+
+    .margin-right-image {
+      padding-right: 3rem;
+    }
+
+    .inline-end-image {
+      padding-inline-end: 3rem;
+    }
+
+    .en-text {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Text Direction Demo</h1>
+
+  <div class="container">
+    <div class="text-box">
+      <p class="en-text"><span>This is a left-to-right (LTR) English text example.</span></p>
+      <p class="ar-text">هذا مثال على النص العربي (من اليمين إلى اليسار).</p>
+    </div>
+
+    <button onclick="toggleDirection()">Simulate direction change</button>
+  </div>
+
+  <section name="margin-demo">
+    <h2>Use "inline" and "block" for you paddings and margins!</h2>
+    <p>Don't use absolute values for their spacing. This can be easily improved by using inline and block. See the
+      difference yourself by changing the reading direction!
+    </p>
+
+    <div class="flex-container">
+      <img class="margin-right-image" src="assets/drake-no.jpg" alt="Drake disagreeing" width="300" />
+      <h2>This image uses padding-right</h2>
+    </div>
+
+    <div class="flex-container">
+      <img class="inline-end-image" src="assets/drake-yes.jpeg" alt="Drake agreeing" width="300" />
+      <h2>This image uses padding-inline-end</h2>
+    </div>
+  </section>
+
+  <section name="References">
+    <h2>References</h2>
+    <ul>
+      <li><a href="https://github.com/Robbert/translate-test">Robbert's translate-test - GitHub</a></li>
+      <li><a
+          href="https://medium.com/@kellycochrane2/why-you-should-stop-using-traditional-margin-and-padding-when-styling-with-css-21428c3ee7">
+          Why you should stop using traditional margin and padding - Medium</a></li>
+      <li>Want to prevent Google from translating an element? Encapsualte it in a bdi element - <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi">MDN bdi page</a></li>
+    </ul>
+  </section>
+
+  <script src="translation-script.js"></script>
+</body>
+
+</html>
