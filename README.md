@@ -12,6 +12,6 @@ Traditional margins and paddings will not work when changing the direction in yo
 
 ## Sources and More reading
 
-https://github.com/Robbert/translate-test
-https://medium.com/@kellycochrane2/why-you-should-stop-using-traditional-margin-and-padding-when-styling-with-css-21428c3ee7
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi
+- https://github.com/Robbert/translate-test
+- https://medium.com/@kellycochrane2/why-you-should-stop-using-traditional-margin-and-padding-when-styling-with-css-21428c3ee7
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi
