@@ -2,6 +2,8 @@
 
 When using Google to translate your page to a language with a different reading direction, that direction is not changed automatically. This repository provides two simple css that will change the direction of your page based on the translation, alongside a demo of the concept. 
 
+### View the page here -> [Translation demo page] (https://mrgowdy.github.io/css-translation-direction/)
+
 ## How does it work?
 
 When google translates a webpage, it adds a class to the html element. `translated-ltr` for a left-to-right language or `translated-rtl` for a right-to-left language. The classes provided in `change-direction.css` will change the direction based on those classes. Grab them from there and add them to a styling file that has access to the root `<html>` element. <strong>Note:</strong> this will not change the dir value in the `<html>` tag. If you wish to change the dir value, consider using a mutationObserver. An example is provided in the 'translate-test' repository.
