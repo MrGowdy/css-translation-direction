@@ -2,7 +2,7 @@
 
 When using Google to translate your page to a language with a different reading direction, that direction is not changed automatically. This repository provides two simple css that will change the direction of your page based on the translation, alongside a demo of the concept. 
 
-### View the page here -> [Translation demo page] (https://mrgowdy.github.io/css-translation-direction/)
+### View the page here -> [Translation demo page](https://mrgowdy.github.io/css-translation-direction/)
 
 ## How does it work?
 
