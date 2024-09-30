@@ -53,10 +53,26 @@
 
     .margin-right-image {
       padding-right: 3rem;
+      max-width: 300px;
+      min-width: 100px;
+    }
+
+    .image-text {
+      font-size: 1rem;
+
+      @media screen and (min-width: 400px) {
+        font-size: 1.5rem;
+      }
     }
 
     .inline-end-image {
       padding-inline-end: 3rem;
+      max-width: 300px;
+      min-width: 100px;
+
+      @media screen and (min-width: 800px) {
+        width: 300px;
+      }
     }
 
     .en-text {
@@ -85,13 +101,13 @@
     </p>
 
     <div class="flex-container">
-      <img class="margin-right-image" src="assets/drake-no.jpg" alt="Drake disagreeing" width="300" />
-      <h2>This image uses padding-right</h2>
+      <img class="margin-right-image" src="assets/drake-no.jpg" alt="Drake disagreeing" />
+      <h2 class="image-text">This image uses padding-right</h2>
     </div>
 
     <div class="flex-container">
-      <img class="inline-end-image" src="assets/drake-yes.jpeg" alt="Drake agreeing" width="300" />
-      <h2>This image uses padding-inline-end</h2>
+      <img class="inline-end-image" src="assets/drake-yes.jpeg" alt="Drake agreeing" />
+      <h2 class="image-text">This image uses padding-inline-end</h2>
     </div>
   </section>
 
